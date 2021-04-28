@@ -1,57 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  width: 100vw;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: lightsalmon;
-  min-height: 62px;
-}
-
-nav ul {
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style-type: none;
-}
-
-nav li {
-  padding: 30px 0 10px 0;
-}
-
-nav li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-}
-
-nav li a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
 header {
-  width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 70px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -59,7 +13,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 15%;
 }
 
 header h1 {
@@ -70,70 +23,31 @@ header h3 {
   font-size: 2rem;
 }
 
-header .icons a {
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  margin: 10px 20px 0 0;
-}
-
-header .icons a:hover {
-  color: blue;
-}
-
-.hamster {
-  width: 35px;
-  height: 35px;
-  background: black;
+header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-radius: 10px;
-  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 10vw;
+  min-width: 150px;
 }
 
-.hamster div {
-  width: 60%;
-  height: 2px;
-  background-color: white;
-  border-radius: 2px;
+header .icons a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
 }
 
-@media (max-width: 1000px) {
-  nav {
-    padding-left: 50px;
-  }
-  nav ul {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  nav ul li {
-    padding: 5px 0;
-  }
-  .hamster {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-  }
+header .icons a:hover {
+  color: #019;
+}
+
+#about {
+  height: 100vh;
 }
 /*# sourceMappingURL=index.css.map */
