@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body{
+    width : 100vw;
+}
+
+nav{
+    position: fixed;
+    top : 0;
+    width : 100%;
+    background : lightsalmon;
+    min-height : 62px;
+    
+    ul{
+        width : 70%;
+        display : flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    li{
+        padding : 30px 0 10px 0;
+
+        a{
+            text-decoration : none;
+            color : white;
+            font-size : 1.2rem;
+
+            &:hover{
+                text-decoration: underline;
+                color : blue;
+            }
+
+            
+        }
+    }
+}
+
+header{
+    width : 100vw;
+    height : 100vh;
+    display : flex;
+    // align-items: flex;
+    justify-content: center;
+    flex-direction : column;
+    padding-left : 15%;
+    h1{
+        font-size : 5rem;
+    }
+
+    h3{
+        font-size : 2rem;
+    }
+
+    .icons{
+        a{
+            font-size: 1.5rem;
+            color: black;
+            text-decoration : none;
+            margin : 10px 20px 0 0;
+
+            &:hover{
+                color : blue;
+            }
+        }
+
+    }
+}
+
+// SCSS CLASSES
+.hamster{
+    $dimension : 35px;
+    width : $dimension;
+    height : $dimension;
+    background : black;
+    align-items: center;
+    flex-direction : column;
+    justify-content: space-around;
+    border-radius : 10px;
+    display : none;
+
+    div{
+        width : 60%;
+        height : 2px;
+        background-color: white;
+        border-radius : 2px;
+    }
+}
+
+@media (max-width : 1000px)
+{
+    nav{
+        padding-left : 50px;
+        ul{
+            display : none;
+            flex-direction : column;
+            justify-content: center;
+            align-items: flex-start;
+
+            li{
+                padding : 5px 0;
+            }
+        }
+    }
+
+    .hamster{
+        display: flex;
+        position : absolute;
+        right : 10px;
+        top : 50%;
+        transform: translate(0, -50%);
+    }
+}
