@@ -51,6 +51,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 70px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
