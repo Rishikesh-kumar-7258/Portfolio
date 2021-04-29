@@ -1,4 +1,4 @@
-console.log("This is working");
+// console.log("This is working");
 
 let skills = ["Developer", "Coder", "Learner", "Teacher"];
 
@@ -36,11 +36,9 @@ $(function(){
 
     }, 300);
 
-    console.log("This here is also working after the time interval part");
+    // console.log("This here is also working after the time interval part");
+    
 
-    $('nav .hamster').click(function(){
-        $('nav ul').slideToggle();
-    })
 })
 
 // $(window).resize(function(){

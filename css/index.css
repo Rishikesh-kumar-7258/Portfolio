@@ -33,6 +33,10 @@ header .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 10vw;
   min-width: 150px;
 }
@@ -48,6 +52,118 @@ header .icons a:hover {
 }
 
 #about {
-  height: 100vh;
+  height: 80vh;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about p span {
+  font-weight: bolder;
+}
+
+#about h3 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+#about .current ul {
+  list-style-type: bullets;
+  font-size: 1.5rem;
+}
+
+#mySkills {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mySkills h3 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+#mySkills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+#mySkills ul li {
+  width: 50%;
+  min-width: 100px;
+  padding: 0 5px;
+  border: 1px solid orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#mySkills ul li p {
+  margin-bottom: 5px;
+}
+
+.filler {
+  min-width: 100%;
+  background: purple;
+  padding: 5px 0;
+  border: 1px solid red;
+  position: relative;
+}
+
+.filler::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: attr(data-per);
+  background: green;
 }
 /*# sourceMappingURL=index.css.map */
