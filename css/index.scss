@@ -6,7 +6,7 @@
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     @include flex(flex-start, center, column);
 
     h1 {
@@ -35,7 +35,7 @@ header {
 }
 
 #about {
-    height: 80vh;
+    min-height: 80vh;
     font-size: 2rem;
     @include flex(flex-start, center, column);
 
@@ -59,7 +59,7 @@ header {
 }
 
 #mySkills {
-    height: 80vh;
+    min-height: 80vh;
     @include flex(flex-start, center, column);
 
     h3 {
@@ -68,7 +68,7 @@ header {
     }
 
     ul {
-        @include flex(center, center, row);
+        @include flex(flex-start, flex-start, row);
         flex-wrap: wrap;
         width: 100%;
 
@@ -76,12 +76,12 @@ header {
             width: 50%;
             min-width: 100px;
             padding: 0 5px;
-            border: 1px solid orange;
             @include flex(flex-start, space-between, row);
             flex-wrap: wrap;
             p{
                 margin-bottom: 5px;
             }
+            margin : 5px 0;
         }
     }
 }
@@ -89,17 +89,14 @@ header {
 // classes
 .filler {
     min-width: 100%;
-    background: purple;
-    padding: 5px 0;
-    border: 1px solid red;
+    background: #bbb;
+    padding: 6px 0;
     position: relative;
 
-    &::before{
-        content: "";
+    .before{
         position :absolute;
+        height : 100%;
         top : 0;
-        bottom : 0;
-        width : attr(data-per);
-        background : green;
+        background : purple;
     }
 }

@@ -39,7 +39,19 @@ $(function(){
     // console.log("This here is also working after the time interval part");
     
 
+
 })
+
+let before = document.querySelectorAll('.filler .before');
+
+before.forEach((element) => {
+    console.log(element.getAttribute('data-per'));
+    element.style.width = element.getAttribute('data-per');
+    // element.animate({
+    //     width : `${element.getAttribute('data-per')}`
+    // }, 5000)
+}) 
+
 
 // $(window).resize(function(){
 //     var size = $(this).width();
